@@ -184,11 +184,17 @@
 
   <section id="contact" class="contact">
     <h2>تواصل معنا</h2>
-    <form>
-      <input type="text" placeholder="الاسم الكامل" required>
-      <input type="email" placeholder="البريد الإلكتروني" required>
-      <textarea rows="5" placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
+    <form action="https://formspree.io/f/xzbllpna" method="POST">
+  <label for="name">الاسم:</label><br>
+  <input type="text" name="name" id="name" required><br><br>
+
+  <label for="email">البريد الإلكتروني:</label><br>
+  <input type="email" name="email" id="email" required><br><br>
+
+  <label for="message">الرسالة:</label><br>
+  <textarea name="message" id="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">إرسال</button>
     </form>
     <div class="contact-info">
       <p>📞 الهاتف: <a href="tel:+967733442331">+967733442331</a></p>
